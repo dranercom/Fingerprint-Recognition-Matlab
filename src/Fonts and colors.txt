@@ -1,0 +1,23 @@
+Calibri
+
+
+pomegranate	(button background)	#c0392b
+wet asphalt 	(background)		#34495e
+midnight blue 	(font)			#2c3e50
+concrete	(background)		#95a5a6
+clouds		(font)			#ecf0f1
+silver 		(font)			#bdc3c7
+
+
+Building Database
+person = struct('Name', [], 'Age', [], 'FID1', [], 'FID2', []);
+person = struct2table(person);
+save database person;
+
+Finding name:
+regexp(str, '[0-9][0-1][0-8]_[0-8]');
+
+
+For getting the structure from table:
+minutiae1 = num2cell(minutiae1);
+struct('FID', '101_1', 'X', minutiae1(:, 1), 'Y', minutiae1(:, 2), 'Type', minutiae1(:, 3), 'Angle', minutiae1(:, 4));

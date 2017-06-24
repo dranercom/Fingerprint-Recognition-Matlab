@@ -1,0 +1,15 @@
+function show(name, age, path1, path2)
+
+load database
+
+rec1 = struct('Name', name, 'Age', age, 'FID1', path1, 'FID2', path2);
+
+[r, c] = size(table);
+temp_struct = table2struct(table);
+if rec.Name == []
+    rec = rec1;
+else
+    rec = [rec; rec1];
+end;
+
+save person 

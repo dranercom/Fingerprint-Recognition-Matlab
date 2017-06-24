@@ -1,0 +1,5 @@
+uniq = unique(minutiae(:, 1));
+
+r = size(uniq(1));
+
+for i=
